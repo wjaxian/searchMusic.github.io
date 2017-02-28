@@ -1,0 +1,70 @@
+@charset 'utf-8';
+body{overflow:hidden;}
+*{margin: 0;padding: 0;}
+@font-face {
+	font-family: 'iconfont';
+    src: url('../style/iconfont.eot'); /* IE9*/
+    src: url('../style/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../style/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../style/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../style/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div.box{position:relative;width:500px;height:40px;margin:10px auto;}
+input{width:400px;height:40px;border:none;border:1px solid #ccc;font-size:16px;position:absolute;left:0;top:0;outline:none;padding:0 5px;}
+span{width:100px;height:42px;background:#3385FF;text-align:center;line-height:40px;font-size:16px;display:inline-block;color:#fff;position:absolute;right:0;top:0;cursor:pointer;}
+span:hover{background:#317ef3;}
+input:hover{border:1px solid #3385FF;}
+ul{width:398px;height:auto;position:absolute;top:41px;left:0;border:1px solid #ccc;background:#fff;display:none;}
+ul li{width:100%;height:30px;line-height:30px;list-style:none;overflow:hidden;}
+ul li i{font-style:normal;margin-left:10px;float:left;}
+ul li i:nth-child(2){margin-right:10px;float:right;}
+ul li:hover{background:#ccc;}
+.music{width:400px;height:80px;background:#666;position:fixed;bottom:50px;left:0;border-radius:0 10px 10px 0;}
+.music .img{width:70px;height:70px;border:1px solid #aaa;float:left;margin-left:5px;margin-top:4px;border-radius:50%;
+	background-size:100%;animation: myfirst 5s ease infinite;-moz-animation: myfirst 5s ease infinite;  /* Firefox */
+-webkit-animation: myfirst 6s linear infinite;  /* Safari 和 Chrome */-o-animation: myfirst 5s ease infinite;}
+@keyframes myfirst
+{
+    0%{transform:rotate(0deg);}
+
+    100%{transform:rotate(360deg);}          
+}
+
+
+
+.music .ms{width:280px;height:68px;float:left;margin-left:8px;text-align:center;padding-top:5px;color:#fff;font-size:16px;position:relative;}
+.music .ms .name{width:268px;height:20px;margin:0 auto;overflow:hidden;}
+.music .bar{width:23px;height:80px;float:right;cursor:pointer;border-radius:0 10px 10px 0;line-height:80px;border-left:1px solid #333;}
+.music .bar:hover{background:#FF8000;}
+.music .bar:hover i{color:#fff;}
+.music .bar i{font-size:30px;text-align:center;color:#999;}
+.navbar{width:100%;height:30px;margin-top:5px;line-height:30px;position:relative;}
+.navbar i{display:inline-block;width:30px;height:30px;font-size:20px;cursor:pointer;}
+.navbar i:last-child{width:20px;height:20px;background:url(../images/feilei2.png)no-repeat;background-size:100%;position:absolute;bottom:0;right:0;}
+
+.list{position:absolute;bottom:130px;left:0;width:375px;height:0;background:#ccc;overflow:hidden;border-radius:5px 5px 0 0;}
+.list li{height:30px;width:100%;position:relative;line-height:30px;background:#ccc;list-style:none;}
+.list li:hover{background:#aaa;}
+.list li i{font-style:normal;margin-left:10px;float:left;}
+.list li i:nth-child(2){margin-right:10px;float:right;}
+
+.navbar-jindu{top:10px;left:10px;width:100%;height:20px;line-height: 20px;position:relative;}
+.navbar-jindu span{background:none;}
+.navbar-jindu .z-time{display: inline-block;width:50px;height:20px;font-size: 13px;line-height: 20px;
+position:absolute;left:0px;top:-4px;background: none;}
+.navbar-jindu .x-time{display: inline-block;width:50px;height:20px;font-size: 13px;line-height: 20px;
+position:absolute;right:20px;top:-4px;background: none;}
+.navbar-jindu .bar-box{width:150px;height:5px;border:1px solid #CFCDCD;position:absolute;left:54px;top:2px;}
+.navbar-jindu .bar-box span{position:absolute;display: block;left:0px;width:0%;height:100%;background:#66BF24;}
+
+.tishi{color:#D42912;font-size:14px;position:absolute;left:20px;top:60px;}
+.music .img{background:url(../images/imgload.jpg)no-repeat;background-size:100%;}
+.allnum{position:absolute;left:-150px;top:14px;font-size:12px;color:#999;}
